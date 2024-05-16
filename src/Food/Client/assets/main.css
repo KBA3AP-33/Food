@@ -1,0 +1,126 @@
+@import url("~/assets/default.scss");
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Marck+Script&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    height: 7px;
+    width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--scrollbar-background);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-color);
+    border-radius: 10px;
+    border: 1px solid var(--scrollbar-border-color);
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.3;
+    font-family:
+        "Fira Sans Extra Condensed",
+        "Inter",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Oxygen",
+        "Ubuntu",
+        "Cantarell",
+        "Fira Sans",
+        "Droid Sans",
+        "Helvetica Neue",
+        "sans-serif";
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-style: italic;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.triple-table {
+    display: grid;
+    grid-template-columns: 1fr var(--content-width) 1fr;
+}
+
+:root {
+    --scrollbar-background: #f1f1f1;
+    --scrollbar-color: #c1c1c1;
+    --scrollbar-border-color: #f1f1f1;
+    --default-color-black: #000;
+    --default-color-white: #fff;
+    --default-color-red: #ff391e;
+    --default-color-lightred: #ff5640;
+    --default-color-orange: #ff7f00;
+    --default-color-green: #66cc66;
+    --default-color-lightgreen: #4ecf4e;
+    --default-color-gray: #ded9cc;
+    --default-color-lightgray: #ccc;
+    --default-date-color: #808080;
+    --default-button-color: #4c4c4c;
+    --default-image-background-color: #f5eee0;
+    --default-color-disabled: #b1b1b1;
+    --default-background-disabled: #e4e4e4;
+    --default-error-color: #ff0000;
+    --default-error-page-background-color: #f0f0f0;
+}
+
+:root {
+    --icon-search: url('https://api.iconify.design/ion:search-outline.svg');
+    --icon-search-hover: url('https://api.iconify.design/ion:search.svg?color=%23ff6f00');
+    --icon-plus: url('https://api.iconify.design/ion:add-circle-outline.svg?color=%23ffffff');
+    --icon-filter: url('https://api.iconify.design/ion:filter.svg');
+    --icon-filter-white: url('https://api.iconify.design/ion:filter.svg?color=%23ffffff');
+    --icon-star: url('https://api.iconify.design/ion:star-outline.svg');
+    --icon-star-hover: url('https://api.iconify.design/ion:star.svg?color=%23ff6f00');
+    --icon-star-active: url('https://api.iconify.design/ion:star.svg?color=%23ff391e');
+    --icon-heart: url('https://api.iconify.design/ion:heart-outline.svg');
+    --icon-heart-hover: url('https://api.iconify.design/ion:heart.svg?color=%23ff6f00');
+    --icon-heart-active: url('https://api.iconify.design/ion:heart.svg?color=%23ff391e');
+    --icon-close: url('https://api.iconify.design/ion:close-outline.svg');
+    --icon-arrow-up: url('https://api.iconify.design/ion:ios-arrow-up.svg');
+    --icon-clock: url('https://api.iconify.design/ion:md-alarm.svg?color=%23ff391e');
+    --icon-print: url('https://api.iconify.design/ion:print-outline.svg');
+    --icon-edit: url('https://api.iconify.design/ion:color-palette-outline.svg');
+    --icon-trash: url('https://api.iconify.design/ion:trash-outline.svg');
+    --icon-trash-hover: url('https://api.iconify.design/ion:trash.svg?color=%23ff6f00');
+    --icon-key: url('https://api.iconify.design/ion:key-outline.svg');
+    --icon-key-hover: url('https://api.iconify.design/ion:key.svg?color=%23ff6f00');
+    --icon-key-active: url('https://api.iconify.design/ion:key.svg?color=%23ff391e');
+    --icon-key-black: url('https://api.iconify.design/ion:key-outline.svg');
+    --icon-key-white: url('https://api.iconify.design/ion:key-outline.svg?color=%23ffffff');
+    --icon-eye-black: url('https://api.iconify.design/ion:eye.svg');
+    --icon-eye-white: url('https://api.iconify.design/ion:eye.svg?color=%23ffffff');
+    --icon-eye-off-black: url('https://api.iconify.design/ion:eye-off.svg');
+    --icon-eye-off-white: url('https://api.iconify.design/ion:eye-off.svg?color=%23ffffff');
+    --icon-logout: url('https://api.iconify.design/ion:log-out-outline.svg');
+    --icon-checkmark-circle: url('https://api.iconify.design/ion:checkmark-circle-outline.svg');
+    --icon-checkmark-circle-hover: url('https://api.iconify.design/ion:checkmark-circle.svg?color=%23ff6f00');
+    --icon-close-circle: url('https://api.iconify.design/ion:close-circle-outline.svg');
+    --icon-close-circle-hover: url('https://api.iconify.design/ion:close-circle.svg?color=%23ff6f00');  
+    --icon-link: url('https://api.iconify.design/ion:arrow-up-right-box-outline.svg');
+    --icon-link-hover: url('https://api.iconify.design/ion:arrow-up-right-box.svg?color=%23ff6f00');
+    --icon-fast-food: url('https://api.iconify.design/ion:fast-food-outline.svg');
+    --icon-fast-food-hover: url('https://api.iconify.design/ion:fast-food.svg?color=%23ff6f00');
+    --icon-fast-food-active: url('https://api.iconify.design/ion:fast-food.svg?color=%23ff391e');
+    --icon-hammer: url('https://api.iconify.design/ion:hammer-outline.svg');
+    --icon-hammer-hover: url('https://api.iconify.design/ion:hammer.svg?color=%23ff6f00');
+    --icon-hammer-active: url('https://api.iconify.design/ion:hammer.svg?color=%23ff391e');
+    --icon-images: url("https://api.iconify.design/ion:md-images.svg?color=%23ff391e");
+    --icon-person-black: url("https://api.iconify.design/ion:person-outline.svg");
+    --icon-person-red: url("https://api.iconify.design/ion:person-outline.svg?color=%23ff391e");
+    --icon-person-white: url("https://api.iconify.design/ion:person-outline.svg?color=%23ffffff");
+    --icon-facebook: url('https://api.iconify.design/iconoir:facebook-tag.svg');
+    --icon-telegram: url('https://api.iconify.design/iconoir:telegram.svg');
+    --icon-youtube: url('https://api.iconify.design/iconoir:youtube.svg');
+    --icon-twitter: url('https://api.iconify.design/iconoir:twitter.svg');
+}

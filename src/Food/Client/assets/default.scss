@@ -1,0 +1,13 @@
+@each $position in (left, right) {
+    .page-#{$position}-container {
+        border-left: 1px solid var(--default-color-gray);
+        border-right: 1px solid var(--default-color-gray);
+        border-#{$position}: none;
+    }
+}
+
+@each $x, $y in ((1, 1), (16, 9), (4, 3), (3, 2)) {
+    .image-#{$x}-#{$y} {
+        aspect-ratio: #{$x} / #{$y};
+    }
+}
