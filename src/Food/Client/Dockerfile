@@ -1,6 +1,4 @@
-# FROM node:18.17.1
-# FROM node:18-alpine
-FROM node:19.5.0-alpine
+FROM node:18-alpine
 
 ENV APP_ROOT /web
 
